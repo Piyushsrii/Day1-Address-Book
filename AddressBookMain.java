@@ -9,7 +9,7 @@ public class AddressBookMain
         boolean check = true;
         while (check == true)
         {
-            System.out.println("1.ADD  2.DISPLAY  3.EDIT  4.DELETE  5.SORT BY NAME/ZIP  6.QUIT");
+            System.out.println("1.ADD  2.DISPLAY  3.EDIT  4.DELETE  5.SORT BY NAME  6.SORT BY ZIP   7.QUIT");
             int option = scanner.nextInt();
             switch (option)
 
@@ -36,9 +36,12 @@ public class AddressBookMain
                case 5:
                     address.sortByFirstName();
 
-               case 6:
+                case 6:
+                    address.sortByPinCode();
+
+                case 7:
                     check = false;
-                    break;
+                    System.out.println("Thankyou for your time");
             }
         }
     }

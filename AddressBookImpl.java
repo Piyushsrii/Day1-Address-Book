@@ -99,7 +99,11 @@ public class AddressBookImpl implements IAddressBook
         System.out.println(list);
     }
 
-
+      public void sortByPinCode()
+    {
+        Collections.sort(list, (p1, p2) ->p1.getPincode().compareTo(p2.getPincode()));
+        System.out.println(list);
+    }
 
 
 
