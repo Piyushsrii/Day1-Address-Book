@@ -33,6 +33,8 @@ public class AddressBookMain
                     adress.deletePersonData(firstName);
                     System.out.println("You have sucessfully deleted person's data");
                     break;
+               case 5:
+                    address.sortByFirstName();
 
                case 6:
                     check = false;

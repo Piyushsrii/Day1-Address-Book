@@ -93,7 +93,11 @@ public class AddressBookImpl implements IAddressBook
     }
 
 
-
+       public void sortByFirstName()
+    {
+        Collections.sort(list,( p1,p2)  -> p1.getFirstName().compareTo(p2.getFirstName()));
+        System.out.println(list);
+    }
 
 
 
