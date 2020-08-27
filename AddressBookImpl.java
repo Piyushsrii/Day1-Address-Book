@@ -8,7 +8,7 @@ public class AddressBookImpl implements IAddressBook
     Scanner scanner = new Scanner(System.in);
     List<Person> list = new LinkedList<Person>();
 
-    public void add() {
+    public void addMultiplePerson() {
         System.out.println("enter your first name:");
         String firstName = scanner.nextLine();
         System.out.println("enter your last name:");

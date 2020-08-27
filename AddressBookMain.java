@@ -15,7 +15,7 @@ public class AddressBookMain
 
             {
                 case 1:
-                adress.add();
+                adress.addMultiplePerson();
                 break;
 
                 case 2:
