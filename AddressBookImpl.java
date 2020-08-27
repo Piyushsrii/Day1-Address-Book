@@ -11,6 +11,13 @@ public class AddressBookImpl implements IAddressBook
     public void addMultiplePerson() {
         System.out.println("enter your first name:");
         String firstName = scanner.nextLine();
+         for(int i=0; i<list.size(); i++)
+        {
+            if(list.get(i).getFirstName().equalsIgnoreCase(firstName)){
+                System.out.println("plese enter valid name this name is already exist");
+                return;
+            }
+        }
         System.out.println("enter your last name:");
         String lastName = scanner.nextLine();
         System.out.println("enter your address");
