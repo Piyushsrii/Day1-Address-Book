@@ -27,10 +27,16 @@ public class AddressBookMain
                     String name=scanner.next();
                     adress.edit(name);
                     break;
+               case 4:
+                    System.out.println("enter person's name");
+                    String firstName=scanner.next();
+                    adress.deletePersonData(firstName);
+                    System.out.println("You have sucessfully deleted person's data");
+                    break;
 
-                case 6:
-                check = false;
-                break;
+               case 6:
+                    check = false;
+                    break;
             }
         }
     }

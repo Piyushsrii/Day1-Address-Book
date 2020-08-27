@@ -73,6 +73,17 @@ public class AddressBookImpl implements IAddressBook
     }
 
 
+                public void deletePersonData(String name)
+    {
+        for(int i=0;i<list.size();i++)
+        {
+            if(list.get(i).getFirstName().equalsIgnoreCase(name))
+            {
+                Person person = list.get(i);
+                list.remove(person);
+            }
+        }
+    }
 
 
 
