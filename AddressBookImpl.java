@@ -28,7 +28,8 @@ public class AddressBookImpl implements IAddressBook
         list.add(person);
     }
 
-    public void display() {
+    public void display() 
+    {
 
         for (Person person : list)
         {
@@ -36,4 +37,48 @@ public class AddressBookImpl implements IAddressBook
         }
 
     }
+
+
+ public void edit(String firstName)
+    {
+        for (int i = 0; i < list.size(); i++)
+        {
+            Person person = list.get(i);
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Hi " + person.getFirstName() + " please enter your  new Address");
+            String address = scanner.nextLine();
+            person.setAddress(address);
+
+            System.out.println("Hi " + person.getFirstName() + " please enter your  new city");
+            String city = scanner.nextLine();
+            person.setCity(city);
+
+            System.out.println("Hi " + person.getFirstName() + " please enter your  new state");
+            String state = scanner.nextLine();
+            person.setState(state);
+
+            System.out.println("Hi " + person.getFirstName() + " please enter your  new Zip Code");
+            String zip = scanner.nextLine();
+            person.setPincode(zip);
+
+            System.out.println("Hi " + person.getFirstName() + " please enter your  new Phone No");
+            int PhoneNo = scanner.nextInt();
+            person.setMobileNo(PhoneNo);
+
+
+            System.out.println("Hi " + person.getFirstName() + " you have sucessfully updated");
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
 }

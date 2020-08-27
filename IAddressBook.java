@@ -2,7 +2,8 @@ public interface IAddressBook
 {
     public void add();
     public void display();
-    /*public void edit(String firstName);
+    public void edit(String firstName);
+/*
     public void deletePersonData(String firstName);
     public void updatePersonDetails(int personId);
     public void sortByfirstName();
