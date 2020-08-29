@@ -8,8 +8,8 @@ public interface IAddressBook
      void sortByPinCode();
      void viewByCity(String city);
      void viewByState(String state);
-   //  void searchPersonInCity(String firstName);
-    // void searchPersonInState(String firstName);
+     void searchPersonInCity(String firstName);
+     void searchPersonInState(String firstName);
 
 }
 

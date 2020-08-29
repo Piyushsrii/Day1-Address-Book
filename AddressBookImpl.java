@@ -8,7 +8,7 @@ public class AddressBookImpl implements IAddressBook {
 
     public void add()
     {
-       System.out.println("enter your first name:");
+        System.out.println("enter your first name:");
         String firstName = scanner.nextLine();
         for(int i=0; i<list.size(); i++)
         {
@@ -32,9 +32,9 @@ public class AddressBookImpl implements IAddressBook {
         String zip = scanner.nextLine()+scanner.nextLine();
 
 
-       person = new Person(firstName, lastName, address, city, state, mobileNo, zip);
+        person = new Person(firstName, lastName, address, city, state, mobileNo, zip);
 
-       list.add(person);
+        list.add(person);
     }
 
     public void display() {
@@ -127,23 +127,23 @@ public class AddressBookImpl implements IAddressBook {
         }
     }
 
-//    public void searchPersonInCity(String firstName)
-//    {
-//        List<Person> people = list.stream().filter(person1 -> person1.getFirstName().equalsIgnoreCase(firstName)).collect(Collectors.toList());
-//
-//        for (Person person: people)
-//        {
-//            System.out.println(person.getFirstName()+"---->"+person.getCity());
-//        }
-//    }
-//
-//    public void searchPersonInState(String firstName)
-//    {
-//        List<Person> people = list.stream().filter(person1 -> person1.getFirstName().equalsIgnoreCase(firstName)).collect(Collectors.toList());
-//        for (Person person: people)
-//        {
-//            System.out.println(person.getFirstName()+"---->"+person.getState());
-//        }
-//    }
+    public void searchPersonInCity(String firstName)
+    {
+        List<Person> people = list.stream().filter(person1 -> person1.getFirstName().equalsIgnoreCase(firstName)).collect(Collectors.toList());
+
+        for (Person person: people)
+        {
+            System.out.println(person.getFirstName()+"---->"+person.getCity());
+        }
+    }
+
+    public void searchPersonInState(String firstName)
+    {
+        List<Person> people = list.stream().filter(person1 -> person1.getFirstName().equalsIgnoreCase(firstName)).collect(Collectors.toList());
+        for (Person person: people)
+        {
+            System.out.println(person.getFirstName()+"---->"+person.getState());
+        }
+    }
 
 }

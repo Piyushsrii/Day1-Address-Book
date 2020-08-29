@@ -50,24 +50,24 @@ public class AddressBookMain {
                         address.viewByState(state);
                         break;
                     }
-//                case 8:
-//                    System.out.println("press 1 for search person in city and 2 for seatch person in  state");
-//                    int localOption1 = scanner.nextInt();
-//                    if (localOption1 == 1)
-//                    {
-//                        System.out.println("enter person firstName");
-//                        String firstname = scanner.next();
-//                        address.searchPersonInCity(firstname);
-//                        break;
-//                    }
-//                    else
-//                    {
-//                        System.out.println("enter state firstName");
-//                        String firstname = scanner.next();
-//                        address.searchPersonInState(firstname);
-//                        break;
-//
-//                    }
+                case 8:
+                    System.out.println("press 1 for search person in city and 2 for seatch person in  state");
+                    int localOption1 = scanner.nextInt();
+                    if (localOption1 == 1)
+                    {
+                        System.out.println("enter person firstName");
+                        String firstname = scanner.next();
+                        address.searchPersonInCity(firstname);
+                        break;
+                    }
+                    else
+                    {
+                        System.out.println("enter state firstName");
+                        String firstname = scanner.next();
+                        address.searchPersonInState(firstname);
+                        break;
+
+                    }
                 case 9:
                     check = false;
                     System.out.println("Thankyou for your time");
