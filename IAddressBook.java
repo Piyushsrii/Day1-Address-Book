@@ -1,10 +1,15 @@
 public interface IAddressBook
 {
-    public void addMultiplePerson();
-    public void display();
-    public void edit(String firstName);
-    public void deletePersonData(String firstName);
-    public void sortByfirstName();
-    public void sortBypincode();
+     void add();
+     void display();
+     void edit(String firstName);
+     void deletePersonData(String firstName);
+     void sortByFirstName();
+     void sortByPinCode();
+     void viewByCity(String city);
+     void viewByState(String state);
+   //  void searchPersonInCity(String firstName);
+    // void searchPersonInState(String firstName);
 
 }
+
